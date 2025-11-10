@@ -8,8 +8,8 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
 
-from backend.dependencies import extract_bearer_token
-from backend.schemas import (
+from dependencies import extract_bearer_token
+from schemas import (
     AuthResponse,
     LoginRequest,
     LogoutRequest,
@@ -18,7 +18,7 @@ from backend.schemas import (
     TokenPayload,
     UserResponse,
 )
-from backend.supabase_client import get_service_client
+from supabase_client import get_service_client
 load_dotenv()  # Load environment variables from .env file
 app = FastAPI(title="Filmee API")
 
