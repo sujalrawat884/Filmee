@@ -3,7 +3,7 @@ from typing import Optional
 
 from supabase import Client, create_client
 
-from .config import get_settings
+from backend.config import get_settings
 
 
 @lru_cache
